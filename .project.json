@@ -1,0 +1,6 @@
+{
+  "deploy": {
+    "destination": "Fiori_Gateway",
+    "name": "ZUI5_MFR_DT_04"
+  }
+}

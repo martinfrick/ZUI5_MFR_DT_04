@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:View 
+		xmlns="sap.suite.ui.commons" 
+		xmlns:ui="sap.suite.ui.microchart" 
+		xmlns:core="sap.ui.core" 
+		controllerName="customtilechips.DeltaMicroChart">
+		
+     <GenericTile 
+  	 	id="kpiTile"
+	 	press="onPress" 
+	 	header="{/config/display_title_text}" 
+	 	subheader="{/config/display_subtitle_text}" 
+	 	frameType="OneByOne">
+        <tileContent>
+        	<TileContent footer="{/config/display_info_text}">
+            	<content>
+                	<ui:DeltaMicroChart id="deltaMicroChart"
+						value1="{/data/emp/value1}"
+						value2="{/data/emp/value2}"
+						title1="{/data/emp/title1}" 
+						title2="{/data/emp/title2}" 
+						displayValue1="{/data/emp/displayValue1}" 
+						displayValue2="{/data/emp/displayValue2}" 
+						deltaDisplayValue="{/data/emp/deltaDisplayValue}"
+						color="{/data/emp/color}"/>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</core:View>
